@@ -14,7 +14,7 @@ export const Layout = () => {
       position="relative"
     >
       <Header />
-      <Container maxW="container.lg" as="main">
+      <Container maxW="container.2xl" as="main">
         <Outlet />
       </Container>
       <Footer />

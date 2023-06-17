@@ -2,8 +2,8 @@ import { Box, Button, Image } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import active from 'src/assets/Icon/active.png';
-import messenger from 'src/assets/Icon/messenger.png';
+import active from 'src/assets/icon/active.png';
+import messenger from 'src/assets/icon/messenger.png';
 
 const Header = () => {
   return (

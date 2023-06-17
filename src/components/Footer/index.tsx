@@ -1,23 +1,23 @@
 import { Box, Center, Flex, Image, List, ListItem, Text } from '@chakra-ui/react';
 import React from 'react';
 
-import bidv from 'src/assets/Icon/bidv.png';
-import copyright from 'src/assets/Icon/copyright.png';
-import facebook from 'src/assets/Icon/facebook.png';
-import gmail from 'src/assets/Icon/gmail.png';
-import locationPin from 'src/assets/Icon/location-pin.png';
-import momo from 'src/assets/Icon/momo.png';
-import myViettel from 'src/assets/Icon/my-viettel.png';
-import receiver from 'src/assets/Icon/receiver.png';
-import tiktok from 'src/assets/Icon/tiktok.png';
-import visa from 'src/assets/Icon/visa.png';
-import youtube from 'src/assets/Icon/youtube.png';
+import bidv from 'src/assets/icon/bidv.png';
+import copyright from 'src/assets/icon/copyright.png';
+import facebook from 'src/assets/icon/facebook.png';
+import gmail from 'src/assets/icon/gmail.png';
+import locationPin from 'src/assets/icon/location-pin.png';
+import momo from 'src/assets/icon/momo.png';
+import myViettel from 'src/assets/icon/my-viettel.png';
+import receiver from 'src/assets/icon/receiver.png';
+import tiktok from 'src/assets/icon/tiktok.png';
+import visa from 'src/assets/icon/visa.png';
+import youtube from 'src/assets/icon/youtube.png';
 
 const Footer = () => {
   return (
     <footer>
       <Box bg="#000" color="#fff" paddingY={10} paddingX={5}>
-        <Flex justifyContent="space-between">
+        <Flex justifyContent="space-between" flexWrap="wrap">
           <Box flex="1" minWidth="350px">
             <Center flexDirection="column">
               <Text

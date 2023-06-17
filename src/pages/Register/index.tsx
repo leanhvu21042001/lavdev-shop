@@ -33,9 +33,9 @@ const Register = () => {
       border="3px solid #00deff"
       bg="#f3fcfe"
       padding={{ lg: 20, md: 10, sm: 5 }}
-      maxW="container.lg
-      "
+      maxW="container.lg"
       margin="auto"
+      my={20}
     >
       <Center>
         <Text mb={2} fontSize="3xl" fontWeight="bold">

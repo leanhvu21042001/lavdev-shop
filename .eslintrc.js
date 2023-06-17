@@ -25,6 +25,11 @@ module.exports = {
       'error',
       {
         endOfLine: 'auto',
+        semi: true,
+        trailingComma: 'all',
+        singleQuote: true,
+        printWidth: 90,
+        tabWidth: 2,
       },
     ],
   },

@@ -6,12 +6,16 @@ const useFetch = <T>(
   queryFn: QueryFunction<T>,
   options?: QueryOptions<T, unknown>,
 ): QueryResponse<T> => {
-  const { data, isLoading, isFetching, isFetched, error, status } = useQuery<T>(queryKey, queryFn, {
-    retry: false,
-    cacheTime: 0,
-    refetchOnWindowFocus: false,
-    ...options,
-  });
+  const { data, isLoading, isFetching, isFetched, error, status } = useQuery<T>(
+    queryKey,
+    queryFn,
+    {
+      retry: false,
+      cacheTime: 0,
+      refetchOnWindowFocus: false,
+      ...options,
+    },
+  );
 
   return {
     data: data as T,

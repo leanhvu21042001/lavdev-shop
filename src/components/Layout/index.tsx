@@ -7,7 +7,12 @@ import Header from '../Header';
 
 export const Layout = () => {
   return (
-    <Box display="flex" flexDirection="column" height={{ lg: '100vh', sm: '100%' }} position="relative">
+    <Box
+      display="flex"
+      flexDirection="column"
+      height={{ lg: '100vh', sm: '100%' }}
+      position="relative"
+    >
       <Header />
       <Container maxW="container.lg" as="main">
         <Outlet />

@@ -18,70 +18,94 @@ const Footer = () => {
     <footer>
       <Box bg="#000" color="#fff" paddingY={10} paddingX={5}>
         <Flex justifyContent="space-between">
-          <Box flex="1">
+          <Box flex="1" minWidth="350px">
             <Center flexDirection="column">
-              <Text as="b">
+              <Text
+                as="b"
+                fontSize={{ xl: '1.9rem', lg: '1.5rem', md: '1.3rem', sm: '1rem' }}
+              >
                 <Center mb={5}>Thông tin liên lạc</Center>
               </Text>
               <List spacing={3}>
                 <ListItem display="flex" gap={5}>
-                  <Image width="30px" src={locationPin} />
-                  <span>Địa chỉ: Quận 1 - TP.HCM</span>
+                  <Image height="50px" src={locationPin} />
+                  <Box
+                    fontSize={{ xl: '1.9rem', lg: '1.5rem', md: '1.3rem', sm: '1rem' }}
+                  >
+                    Địa chỉ: Quận 1 - TP.HCM
+                  </Box>
                 </ListItem>
                 <ListItem display="flex" gap={5}>
-                  <Image width="30px" src={gmail} />
-                  <span>Email: starunboy@gmail.com</span>
+                  <Image height="50px" src={gmail} />
+                  <Box
+                    fontSize={{ xl: '1.9rem', lg: '1.5rem', md: '1.3rem', sm: '1rem' }}
+                  >
+                    Email: starunboy@gmail.com
+                  </Box>
                 </ListItem>
                 <ListItem display="flex" gap={5}>
-                  <Image width="30px" src={receiver} />
-                  <span>Số điện thoại: 09462375432</span>
+                  <Image height="50px" src={receiver} />
+                  <Box
+                    fontSize={{ xl: '1.9rem', lg: '1.5rem', md: '1.3rem', sm: '1rem' }}
+                  >
+                    Số điện thoại: 09462375432
+                  </Box>
                 </ListItem>
               </List>
             </Center>
           </Box>
 
-          <Box flex="1">
+          <Box flex="1" minWidth="350px">
             <Center flexDirection="column">
               <Box>
-                <Text as="b">
+                <Text
+                  as="b"
+                  fontSize={{ xl: '1.9rem', lg: '1.5rem', md: '1.3rem', sm: '1rem' }}
+                >
                   <Center mb={5}>Thanh toán</Center>
                 </Text>
 
                 <Center>
                   <Box width="40%" display="flex" justifyContent="space-around" gap={5}>
-                    <Image width="30px" src={momo} />
-                    <Image width="30px" src={bidv} />
-                    <Image width="30px" src={visa} />
+                    <Image height="65px" src={momo} />
+                    <Image height="65px" src={bidv} />
+                    <Image height="65px" src={visa} />
                   </Box>
                 </Center>
               </Box>
 
               <Box mt={5}>
-                <Text as="b">
+                <Text
+                  as="b"
+                  fontSize={{ xl: '1.9rem', lg: '1.5rem', md: '1.3rem', sm: '1rem' }}
+                >
                   <Center mb={5}>Vận chuyển</Center>
                 </Text>
 
                 <Center>
-                  <Box width="40%" display="flex" justifyContent="space-around">
-                    <Image width="60px" src={myViettel} />
-                    <Image width="60px" src={myViettel} />
-                    <Image width="60px" src={myViettel} />
+                  <Box display="flex" justifyContent="space-around">
+                    <Image width="130px" src={myViettel} />
+                    <Image width="130px" src={myViettel} />
+                    <Image width="130px" src={myViettel} />
                   </Box>
                 </Center>
               </Box>
             </Center>
           </Box>
 
-          <Box flex="1">
+          <Box flex="1" minWidth="350px">
             <Center flexDirection="column">
-              <Text as="b">
+              <Text
+                as="b"
+                fontSize={{ xl: '1.9rem', lg: '1.5rem', md: '1.3rem', sm: '1rem' }}
+              >
                 <Center mb={5}>Theo dõi</Center>
               </Text>
               <Center>
                 <Box width="40%" display="flex" justifyContent="space-around" gap={5}>
-                  <Image width="30px" src={facebook} />
-                  <Image width="30px" src={tiktok} />
-                  <Image width="30px" src={youtube} />
+                  <Image height="65px" src={facebook} />
+                  <Image height="65px" src={tiktok} />
+                  <Image height="65px" src={youtube} />
                 </Box>
               </Center>
             </Center>
@@ -89,8 +113,10 @@ const Footer = () => {
         </Flex>
 
         <Box display="flex" alignItems="center" justifyContent="center" mt={10}>
-          <Image width="30px" src={copyright} />
-          <Text as="b">Bản quyèn thuộc về Starunboy</Text>
+          <Image height="65px" src={copyright} />
+          <Text as="b" ms={3}>
+            Bản quyèn thuộc về Starunboy
+          </Text>
         </Box>
       </Box>
     </footer>

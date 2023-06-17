@@ -3,7 +3,7 @@
 ## Clone project
 
 ```sh
-git clone https://github.com/leanhvu21042001/lav-blog-client.git
+git clone https://github.com/leanhvu21042001/shop-starunboy.git
 ```
 
 ## Install dependencies and DevDependencies

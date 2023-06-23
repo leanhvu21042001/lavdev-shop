@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 
 import { Layout } from './components/Layout';
+import Checkout from './pages/Checkout';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -20,6 +21,7 @@ export const RoutesCustom = () => {
         <Route path="/" element={<Home />} />
         <Route path="/san-pham" element={<Products />} />
         <Route path="/san-pham/:id" element={<ProductDetail />} />
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="/dang-ky" element={<Register />} />
         <Route path="/dang-nhap" element={<Login />} />
         <Route path="*" element={<PageNotFound />} />

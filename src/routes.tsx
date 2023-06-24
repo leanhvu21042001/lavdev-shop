@@ -11,6 +11,7 @@ import PageNotFound from './pages/PageNotFound';
 import ProductDetail from './pages/ProductDetail';
 import Products from './pages/Products/idnex';
 import Register from './pages/Register';
+import UserGuide from './pages/UserGuide';
 
 export const RoutesCustom = () => {
   const location = useLocation();
@@ -22,6 +23,7 @@ export const RoutesCustom = () => {
         <Route path="/san-pham" element={<Products />} />
         <Route path="/san-pham/:id" element={<ProductDetail />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/user-guide" element={<UserGuide />} />
         <Route path="/dang-ky" element={<Register />} />
         <Route path="/dang-nhap" element={<Login />} />
         <Route path="*" element={<PageNotFound />} />

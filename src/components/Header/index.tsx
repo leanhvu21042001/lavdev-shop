@@ -47,7 +47,7 @@ const Header = () => {
             </Box>
 
             <Box me="1rem">
-              <Link to="/huong-dan-su-dung">
+              <Link to="/user-guide">
                 <Button
                   fontSize={{ xl: '1.9rem', lg: '1.5rem', md: '1rem', sm: '0.8rem' }}
                   fontWeight="bold"

@@ -207,25 +207,43 @@ const Checkout = () => {
 
           <Box>
             <Center>
-              <RadioGroup>
+              <RadioGroup defaultValue="1">
                 <VStack alignItems="flex-start" justifyContent="flex-start">
-                  <FormLabel fontSize={{ base: 'xl', md: 'lg', lg: '3xl' }}>
-                    <Radio value="1" width="50px" height="50px" />
+                  <FormLabel
+                    fontSize={{ base: 'xl', md: 'lg', lg: '3xl' }}
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    gap={5}
+                  >
+                    <Radio value="1" transform="scale(1.5)" />
                     Thanh toán khi giao hàng
                   </FormLabel>
-                  <FormLabel fontSize={{ base: 'xl', md: 'lg', lg: '3xl' }}>
-                    <Radio value="2" width="50px" height="50px" />
+                  <FormLabel
+                    fontSize={{ base: 'xl', md: 'lg', lg: '3xl' }}
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    gap={5}
+                  >
+                    <Radio value="2" transform="scale(1.5)" />
                     Thanh toán qua ngân hàng
                   </FormLabel>
-                  <FormLabel fontSize={{ base: 'xl', md: 'lg', lg: '3xl' }}>
-                    <Radio value="3" width="50px" height="50px" />
+                  <FormLabel
+                    fontSize={{ base: 'xl', md: 'lg', lg: '3xl' }}
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    gap={5}
+                  >
+                    <Radio value="3" transform="scale(1.5)" />
                     Thanh toán qua MOMO
                   </FormLabel>
                 </VStack>
               </RadioGroup>
             </Center>
 
-            <Center>
+            <Center mt={10}>
               <Button
                 size="large"
                 padding={5}

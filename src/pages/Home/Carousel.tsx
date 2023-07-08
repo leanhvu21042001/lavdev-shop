@@ -13,12 +13,13 @@ import Slider, { Settings } from 'react-slick';
 
 import moveToNext from 'src/assets/icon/move-to-next.png';
 import background from 'src/assets/image/background.png';
+import { useMediaQueryLargerTablet } from 'src/hooks/useMediaQuery';
 
 import './carousel.scss';
 
 export default function Carousel() {
   const [slider, setSlider] = React.useState<Slider | null>(null);
-
+  const isLargerThanTablet = useMediaQueryLargerTablet();
   const top = useBreakpointValue({ base: '90%', md: '50%' });
   const side = useBreakpointValue({ base: '30%', md: '10px' });
 
@@ -84,44 +85,48 @@ export default function Carousel() {
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
-      {/* Left Icon */}
-      <IconButton
-        aria-label="left-arrow"
-        colorScheme="messenger"
-        borderRadius="full"
-        position="absolute"
-        left={side}
-        top={top}
-        transform={'translate(0%, -50%) rotate(180deg)'}
-        zIndex={2}
-        onClick={() => slider?.slickPrev()}
-        backgroundPosition="center"
-        backgroundRepeat="no-repeat"
-        backgroundSize="cover"
-        backgroundImage={`url(${moveToNext})`}
-        variant="ghost"
-        _hover={{
-          backgroundColor: 'unset',
-        }}
-        rotate="180deg"
-      />
-      <IconButton
-        aria-label="right-arrow"
-        position="absolute"
-        right={side}
-        top={top}
-        transform={'translate(0%, -50%)'}
-        zIndex={2}
-        onClick={() => slider?.slickNext()}
-        backgroundPosition="center"
-        backgroundRepeat="no-repeat"
-        backgroundSize="cover"
-        backgroundImage={`url(${moveToNext})`}
-        variant="ghost"
-        _hover={{
-          backgroundColor: 'unset',
-        }}
-      />
+      {isLargerThanTablet && (
+        <>
+          <IconButton
+            aria-label="left-arrow"
+            colorScheme="messenger"
+            borderRadius="full"
+            position="absolute"
+            left={side}
+            top={top}
+            transform={'translate(0%, -50%) rotate(180deg)'}
+            zIndex={2}
+            onClick={() => slider?.slickPrev()}
+            backgroundPosition="center"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            backgroundImage={`url(${moveToNext})`}
+            variant="ghost"
+            _hover={{
+              backgroundColor: 'unset',
+            }}
+            rotate="180deg"
+          />
+          <IconButton
+            aria-label="right-arrow"
+            position="absolute"
+            right={side}
+            top={top}
+            transform={'translate(0%, -50%)'}
+            zIndex={2}
+            onClick={() => slider?.slickNext()}
+            backgroundPosition="center"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            backgroundImage={`url(${moveToNext})`}
+            variant="ghost"
+            _hover={{
+              backgroundColor: 'unset',
+            }}
+          />
+        </>
+      )}
+
       {/* Slider */}
       <Box width="82%" marginInline="auto">
         <Slider {...settings} ref={(slider) => setSlider(slider)}>

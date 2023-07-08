@@ -22,10 +22,12 @@ import promotional from 'src/assets/icon/promotional.png';
 import starEmpty from 'src/assets/icon/star-empty.png';
 import starYellow from 'src/assets/icon/star-yellow.png';
 import PersonalCard3 from 'src/assets/image/PersonalCard3.png';
+import { useMediaQueryLarger1110 } from 'src/hooks/useMediaQuery';
 
 const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const listProducts = [...Array(8)].map((_value, index) => <Product key={index} />);
+  const isLargerThan1110 = useMediaQueryLarger1110();
 
   return (
     <Box>
@@ -35,14 +37,23 @@ const Products = () => {
         </Text>
       </Center>
 
-      <Grid templateRows="auto" templateColumns="repeat(5, 1fr)" gap={4}>
-        <GridItem colSpan={1}>
+      <Grid
+        templateRows={isLargerThan1110 ? 'auto' : 'repeat(auto-fit, minmax(250px, 1fr))'}
+        templateColumns="repeat(5, 1fr)"
+        gap={4}
+      >
+        <GridItem colSpan={isLargerThan1110 ? 1 : 5}>
           <CardCategory />
 
           <RatingNow />
         </GridItem>
-        <GridItem colSpan={4}>
-          <Grid templateRows="auto" templateColumns="repeat(4, 1fr)" gap={4}>
+        <GridItem colSpan={isLargerThan1110 ? 4 : 5}>
+          <Grid
+            templateRows="auto"
+            // templateColumns={isLargerThan1240 ? 'repeat(4, 1fr)' : 'repeat(3, 1fr)'}
+            templateColumns="repeat(auto-fit, minmax(250px, 1fr))"
+            gap={4}
+          >
             {listProducts}
           </Grid>
         </GridItem>
@@ -78,7 +89,7 @@ const Pagination = ({
     .map((number) => (
       <Button
         size="lg"
-        fontSize="1.4rem"
+        fontSize="0.9rem"
         fontWeight="bold"
         key={uniqueId()}
         onClick={() => {
@@ -103,7 +114,7 @@ const Pagination = ({
     <Box display="flex" gap={3} justifyContent="center" my={10}>
       <Button
         size="lg"
-        fontSize="1.4rem"
+        fontSize="0.9rem"
         fontWeight="bold"
         disabled={page <= 0}
         onClick={() => {
@@ -120,7 +131,7 @@ const Pagination = ({
       {items}
       <Button
         size="lg"
-        fontSize="1.4rem"
+        fontSize="0.9rem"
         fontWeight="bold"
         onClick={() => {
           setPage((prev) => {

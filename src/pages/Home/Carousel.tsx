@@ -11,8 +11,8 @@ import React from 'react';
 // And react-slick as our Carousel Lib
 import Slider, { Settings } from 'react-slick';
 
-import moveToNext from 'src/assets/icon/move-to-next.png';
-import background from 'src/assets/image/background.png';
+import moveToNext from 'src/assets/icons/move-to-next.png';
+import background from 'src/assets/images/background.png';
 import { useMediaQueryLargerTablet } from 'src/hooks/useMediaQuery';
 
 import './carousel.scss';

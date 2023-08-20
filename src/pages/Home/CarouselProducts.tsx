@@ -17,10 +17,10 @@ import React from 'react';
 // And react-slick as our Carousel Lib
 import Slider, { Settings } from 'react-slick';
 
-import moveToNext from 'src/assets/icon/move-to-next.png';
-import promotional from 'src/assets/icon/promotional.png';
-// import background from 'src/assets/image/background.png';
-import PersonalCard3 from 'src/assets/image/PersonalCard3.png';
+import moveToNext from 'src/assets/icons/move-to-next.png';
+import promotional from 'src/assets/icons/promotional.png';
+// import background from 'src/assets/images/background.png';
+import PersonalCard3 from 'src/assets/images/PersonalCard3.png';
 import {
   useMediaQueryLarger940,
   useMediaQueryLargerTablet,

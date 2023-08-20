@@ -15,8 +15,8 @@ import {
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import active from 'src/assets/icon/active.png';
-import messenger from 'src/assets/icon/messenger.png';
+import active from 'src/assets/icons/active.png';
+import messenger from 'src/assets/icons/messenger.png';
 
 const HeaderMobile = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

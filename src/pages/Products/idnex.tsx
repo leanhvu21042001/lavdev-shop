@@ -18,10 +18,10 @@ import {
 } from '@chakra-ui/react';
 import { range, uniqueId } from 'lodash';
 import React, { useEffect, useState } from 'react';
-import promotional from 'src/assets/icon/promotional.png';
-import starEmpty from 'src/assets/icon/star-empty.png';
-import starYellow from 'src/assets/icon/star-yellow.png';
-import PersonalCard3 from 'src/assets/image/PersonalCard3.png';
+import promotional from 'src/assets/icons/promotional.png';
+import starEmpty from 'src/assets/icons/star-empty.png';
+import starYellow from 'src/assets/icons/star-yellow.png';
+import PersonalCard3 from 'src/assets/images/PersonalCard3.png';
 import { useMediaQueryLarger1110 } from 'src/hooks/useMediaQuery';
 
 const Products = () => {

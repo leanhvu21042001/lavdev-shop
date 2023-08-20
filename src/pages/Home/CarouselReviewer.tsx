@@ -13,10 +13,10 @@ import React from 'react';
 // And react-slick as our Carousel Lib
 import Slider, { Settings } from 'react-slick';
 
-import moveToNext from 'src/assets/icon/move-to-next.png';
-import starEmpty from 'src/assets/icon/star-empty.png';
-import starYellow from 'src/assets/icon/star-yellow.png';
-import myfriend from 'src/assets/image/myfriend.png';
+import moveToNext from 'src/assets/icons/move-to-next.png';
+import starEmpty from 'src/assets/icons/star-empty.png';
+import starYellow from 'src/assets/icons/star-yellow.png';
+import myfriend from 'src/assets/images/myfriend.png';
 import { useMediaQueryLarger1142 } from 'src/hooks/useMediaQuery';
 
 import './carousel_reviewer.scss';

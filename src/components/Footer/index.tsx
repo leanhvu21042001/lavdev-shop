@@ -1,17 +1,17 @@
 import { Box, Center, Flex, Image, List, ListItem, Text } from '@chakra-ui/react';
 import React from 'react';
 
-import bidv from 'src/assets/icon/bidv.png';
-import copyright from 'src/assets/icon/copyright.png';
-import facebook from 'src/assets/icon/facebook.png';
-import gmail from 'src/assets/icon/gmail.png';
-import locationPin from 'src/assets/icon/location-pin.png';
-import momo from 'src/assets/icon/momo.png';
-import myViettel from 'src/assets/icon/my-viettel.png';
-import receiver from 'src/assets/icon/receiver.png';
-import tiktok from 'src/assets/icon/tiktok.png';
-import visa from 'src/assets/icon/visa.png';
-import youtube from 'src/assets/icon/youtube.png';
+import bidv from 'src/assets/icons/bidv.png';
+import copyright from 'src/assets/icons/copyright.png';
+import facebook from 'src/assets/icons/facebook.png';
+import gmail from 'src/assets/icons/gmail.png';
+import locationPin from 'src/assets/icons/location-pin.png';
+import momo from 'src/assets/icons/momo.png';
+import myViettel from 'src/assets/icons/my-viettel.png';
+import receiver from 'src/assets/icons/receiver.png';
+import tiktok from 'src/assets/icons/tiktok.png';
+import visa from 'src/assets/icons/visa.png';
+import youtube from 'src/assets/icons/youtube.png';
 
 const Footer = () => {
   return (

@@ -1,10 +1,10 @@
 import { Box, Center, Flex, Image, List, ListItem, Text } from '@chakra-ui/react';
 import React from 'react';
-import customerReview from 'src/assets/icon/customer-review.png';
-import gameControl from 'src/assets/icon/game-control.png';
-import idCard from 'src/assets/icon/id-card.png';
-import BackgroundGame from 'src/assets/image/BackgroundGame.png';
-import PersonalCard2 from 'src/assets/image/PersonalCard2.png';
+import customerReview from 'src/assets/icons/customer-review.png';
+import gameControl from 'src/assets/icons/game-control.png';
+import idCard from 'src/assets/icons/id-card.png';
+import BackgroundGame from 'src/assets/images/BackgroundGame.png';
+import PersonalCard2 from 'src/assets/images/PersonalCard2.png';
 import { useMediaQueryLarger750 } from 'src/hooks/useMediaQuery';
 import Carousel from './Carousel';
 import CarouselProducts from './CarouselProducts';

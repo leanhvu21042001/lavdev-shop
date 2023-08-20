@@ -2,11 +2,11 @@ import { Box, Button, Center, Flex, Image, Input, Spacer, Text } from '@chakra-u
 import React, { useState } from 'react';
 
 // import CarouselProductDetail from './CarouselProductDetail';
-import creditCard from 'src/assets/icon/credit-card.png';
-import pen from 'src/assets/icon/pen.png';
-import priceTag from 'src/assets/icon/price-tag.png';
-import receiver from 'src/assets/icon/receiver.png';
-import PersonalCard from 'src/assets/image/PersonalCard.png';
+import creditCard from 'src/assets/icons/credit-card.png';
+import pen from 'src/assets/icons/pen.png';
+import priceTag from 'src/assets/icons/price-tag.png';
+import receiver from 'src/assets/icons/receiver.png';
+import PersonalCard from 'src/assets/images/PersonalCard.png';
 import CarouselProducts from './CarouselProducts';
 
 const ProductDetail = () => {

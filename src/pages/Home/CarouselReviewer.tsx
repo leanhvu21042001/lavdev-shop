@@ -161,7 +161,7 @@ export default function CarouselReviewer() {
                     gap={4}
                     justifyContent="center"
                   >
-                    <span>Toàn Sao</span> <IconStarRating rating={5} />
+                    <span>Lê Anh Vũ</span> <IconStarRating rating={5} />
                   </Text>
                 </Box>
               </Flex>

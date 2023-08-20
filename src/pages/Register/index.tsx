@@ -166,7 +166,7 @@ const Register = () => {
 
           <Text mb={8} fontSize="1.7rem" color="#000">
             Bằng cách nhấn vào nút &quot;Đăng Ký&quot;, tôi đồn ý với thỏa thuận sử dụng
-            và quy định bảo mật của Starunboy
+            và quy định bảo mật của LAVDEV SHOP
           </Text>
 
           <Center>

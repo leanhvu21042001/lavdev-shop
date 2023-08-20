@@ -28,7 +28,7 @@ const Home = () => {
         <Flex flexDirection={isLargerThan750 ? 'row' : 'column'}>
           <Box flex="3">
             <Text fontWeight="bold" fontSize={{ base: 'xl', md: 'lg', lg: '3xl' }}>
-              Thẻ cá nhân thông minh tích hợp game
+              Thẻ cá nhân thông minh tích hợp
             </Text>
             <List spacing={3}>
               <ListItem display="flex" alignItems="center">
@@ -73,7 +73,7 @@ const Home = () => {
         <Center gap={4} my={10}>
           <Image height="60px" src={gameControl} transform="rotate(35deg)" />
           <Text fontWeight="bold" fontSize={{ base: 'xl', md: 'lg', lg: '3xl' }}>
-            GIỚI THIỆU VỀ GAME STARUNBOY
+            GIỚI THIỆU VỀ LAVDEV SHOP
           </Text>
           <Image height="60px" src={gameControl} transform="rotate(-35deg)" />
         </Center>

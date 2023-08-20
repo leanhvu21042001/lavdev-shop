@@ -24,7 +24,7 @@ const HeaderMobile = () => {
     <>
       <header>
         <Box textAlign="center" fontWeight="bold" fontSize="4xl">
-          STARUNBOY
+          LAVDEV SHOP
         </Box>
         <Box
           bg="#61def8"

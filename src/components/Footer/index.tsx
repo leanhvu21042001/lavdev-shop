@@ -32,7 +32,7 @@ const Footer = () => {
                   <Box
                     fontSize={{ xl: '1.9rem', lg: '1.5rem', md: '1.3rem', sm: '1rem' }}
                   >
-                    Địa chỉ: Quận 1 - TP.HCM
+                    Địa chỉ: Thủ Đức - TP.HCM
                   </Box>
                 </ListItem>
                 <ListItem display="flex" gap={5}>
@@ -40,7 +40,7 @@ const Footer = () => {
                   <Box
                     fontSize={{ xl: '1.9rem', lg: '1.5rem', md: '1.3rem', sm: '1rem' }}
                   >
-                    Email: starunboy@gmail.com
+                    Email: leanhvu21042001@gmail.com
                   </Box>
                 </ListItem>
                 <ListItem display="flex" gap={5}>
@@ -48,7 +48,7 @@ const Footer = () => {
                   <Box
                     fontSize={{ xl: '1.9rem', lg: '1.5rem', md: '1.3rem', sm: '1rem' }}
                   >
-                    Số điện thoại: 09462375432
+                    Số điện thoại: 0333124198
                   </Box>
                 </ListItem>
               </List>
@@ -115,7 +115,7 @@ const Footer = () => {
         <Box display="flex" alignItems="center" justifyContent="center" mt={10}>
           <Image height="65px" src={copyright} />
           <Text as="b" ms={3}>
-            Bản quyèn thuộc về Starunboy
+            Bản quyèn thuộc về LAVDEV SHOP
           </Text>
         </Box>
       </Box>

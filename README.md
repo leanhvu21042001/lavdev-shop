@@ -1,9 +1,9 @@
-# StarunBoy
+# LAVDEV SHOP
 
 ## Clone project
 
 ```sh
-git clone https://github.com/leanhvu21042001/shop-starunboy.git
+git clone https://github.com/leanhvu21042001/lavdev-shop.git
 ```
 
 ## Install dependencies and DevDependencies
